@@ -2,7 +2,7 @@ const rows = [
   {
     number: "1",
     title: "Balances",
-    body: "An euint64 handle. Not a public number.",
+    body: "An euint64 handle. Not a public number. The wallet shows **** because the balance stays ciphertext.",
     image: "/sec-balance.png",
     alt: "A balance shown as four asterisks",
     panel: true,
@@ -11,7 +11,7 @@ const rows = [
   {
     number: "2",
     title: "Transfers",
-    body: "confidentialTransfer, instead of transfer.",
+    body: "confidentialTransfer, instead of transfer. From and to stay visible. The value on the explorer is ****.",
     image: "/sec-transfer.png",
     alt: "An explorer table whose values are four asterisks",
     panel: true,
@@ -20,7 +20,7 @@ const rows = [
   {
     number: "3",
     title: "A read",
-    body: "confidentialBalanceOf, instead of balanceOf.",
+    body: "confidentialBalanceOf, instead of balanceOf. You still ask for a balance. The answer is a sealed handle, not the amount.",
     image: "/sec-read.png",
     alt: "A glass over a redacted balance",
     panel: true,
@@ -37,7 +37,7 @@ export function Applications() {
         </h2>
         <div className="mx-auto mt-4 h-[3px] w-16 bg-black" />
         <p className="mx-auto mt-5 max-w-2xl text-center text-[17px] leading-7 text-[#5e5e5e]">
-          If you have written an ERC-20, this is the same token.
+          If you have written an ERC-20, this is the same token. Balance, transfer, and read are the same calls. The amount stays sealed, so the chain records the move and never the number.
         </p>
 
         <div className="mt-16 space-y-16 md:mt-20 md:space-y-24">
