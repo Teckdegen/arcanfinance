@@ -7,7 +7,6 @@ const rows = [
     alt: "A balance shown as four asterisks",
     panel: true,
     flip: false,
-    wide: false,
   },
   {
     number: "2",
@@ -15,9 +14,8 @@ const rows = [
     body: "confidentialTransfer, instead of transfer.",
     image: "/sec-transfer.png",
     alt: "An explorer table whose values are four asterisks",
-    panel: false,
+    panel: true,
     flip: true,
-    wide: true,
   },
   {
     number: "3",
@@ -27,7 +25,6 @@ const rows = [
     alt: "A glass over a redacted balance",
     panel: true,
     flip: false,
-    wide: false,
   },
 ];
 
@@ -44,9 +41,14 @@ export function Applications() {
         </p>
 
         <div className="mt-16 space-y-16 md:mt-20 md:space-y-24">
-          {rows.map((row) =>
-            row.wide ? (
-              <div key={row.number}>
+          {rows.map((row) => (
+            <div key={row.number} className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
+              <div className={row.flip ? "md:order-2" : ""}>
+                <div className={row.panel ? "rounded-2xl bg-[#ececec] px-6 py-8" : "px-2 py-4"}>
+                  <img src={row.image} alt={row.alt} className="mx-auto h-64 w-full object-contain sm:h-72" />
+                </div>
+              </div>
+              <div className={row.flip ? "md:order-1" : ""}>
                 <span className="inline-flex h-7 w-7 items-center justify-center bg-black text-[14px] font-medium text-white">
                   {row.number}
                 </span>
@@ -54,27 +56,9 @@ export function Applications() {
                   {row.title}
                 </h3>
                 <p className="mt-3 max-w-md text-[16px] leading-7 text-[#4a4a4a]">{row.body}</p>
-                <img src={row.image} alt={row.alt} className="mt-8 w-full" />
               </div>
-            ) : (
-              <div key={row.number} className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
-                <div className={row.flip ? "md:order-2" : ""}>
-                  <div className={row.panel ? "rounded-2xl bg-[#ececec] px-6 py-8" : "px-2 py-4"}>
-                    <img src={row.image} alt={row.alt} className="mx-auto h-64 w-full object-contain sm:h-72" />
-                  </div>
-                </div>
-                <div className={row.flip ? "md:order-1" : ""}>
-                  <span className="inline-flex h-7 w-7 items-center justify-center bg-black text-[14px] font-medium text-white">
-                    {row.number}
-                  </span>
-                  <h3 className="mt-4 text-[1.85rem] font-medium leading-tight tracking-[-0.03em] text-[#242424] sm:text-[2.15rem]">
-                    {row.title}
-                  </h3>
-                  <p className="mt-3 max-w-md text-[16px] leading-7 text-[#4a4a4a]">{row.body}</p>
-                </div>
-              </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
