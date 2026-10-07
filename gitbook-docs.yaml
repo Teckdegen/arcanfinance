@@ -1,0 +1,17 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Arcan
+  structure:
+    - type: section
+      key: section-documentation
+      title: Documentation
+      path: docs
+      default: true
+      children:
+        - type: space
+          key: space-arcan
+          title: Arcan
+          path: docs
+          default: true
+          content:
+            directory: ./docs
