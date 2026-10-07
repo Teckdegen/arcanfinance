@@ -14,14 +14,24 @@ export function Hero() {
             A Zama fork deployed on Robinhood
           </span>
         </p>
-        <a
-          href="https://docs.arcan.finance/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full bg-black px-7 py-3 text-[15px] font-medium text-white"
-        >
-          Read docs
-        </a>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="https://docs.arcan.finance/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-black px-7 py-3 text-[15px] font-medium text-white"
+          >
+            Read docs
+          </a>
+          <a
+            href="https://ponsfamily.com/launchpad/0xf11d9b4ecc3e07f0beef0f176dd641d2e0fc3f37"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-black bg-white px-7 py-3 text-[15px] font-medium text-black"
+          >
+            Buy $ANC
+          </a>
+        </div>
       </div>
     </section>
   );
