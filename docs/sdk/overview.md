@@ -9,6 +9,7 @@ Package name: `@arcan/sdk`.
 * Loads the Arcan public key and host addresses for Robinhood.
 * Encrypts a number into an `externalEuint64` and an input proof.
 * Builds the call data for `confidentialTransfer` and `confidentialBalanceOf`.
+* Exposes a token helper for the [private token standard](../apps/token.md): balance, transfer, and operator approval.
 * Decrypts a handle for an account on the access list.
 * Requests a public decrypt when the contract has allowed it.
 

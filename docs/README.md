@@ -9,6 +9,7 @@ If you have written an ERC-20, the calls are the same shape. The amount is not a
 * New to the system: read the [Litepaper](litepaper.md).
 * Write a first contract: follow the [Quick start](start/quick-start.md).
 * Learn the Solidity surface: start with [What is FHEVM](solidity/fhevm.md).
+* See what to ship: [What you can build](apps/build.md).
 * Build the web app: use the [Arcan SDK](sdk/overview.md).
 * See how a transfer moves: read [FHE on the host chain](protocol/overview.md).
 * Stuck on a call: [Support](help.md).
