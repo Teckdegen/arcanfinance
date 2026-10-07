@@ -1,6 +1,6 @@
 # Encrypted types
 
-Encrypted types are the private counterparts of Solidity values. A confidential token balance is an `euint64`. A hidden flag is an `ebool`. A hidden recipient can be an `eaddress`.
+Encrypted types are the confidential counterparts of Solidity values. A confidential token balance is an `euint64`. A hidden flag is an `ebool`. A hidden recipient can be an `eaddress`.
 
 ## In the contract
 

@@ -7,7 +7,7 @@ import { FHE, euint64, externalEuint64 } from "@arcan/solidity/lib/FHE.sol";
 import { ArcanConfig } from "@arcan/solidity/config/ArcanConfig.sol";
 
 contract ConfidentialToken is ArcanConfig {
-    mapping(address => euint64) private balances;
+    mapping(address => euint64) internal balances;
 
     function confidentialTransfer(
         address to,
@@ -47,4 +47,4 @@ await token.confidentialTransfer(recipient, handles[0], inputProof);
 
 The recipient decrypts with [user decrypt](../sdk/decrypt.md). Anyone else reading the chain sees the handle and, in a wallet, `****`.
 
-More on the standard is in [Private token standard](../apps/token.md). The SDK walkthrough is [Transfer](../sdk/transfer.md).
+More on the standard is in [Confidential token standard](../apps/token.md). The SDK walkthrough is [Transfer](../sdk/transfer.md).

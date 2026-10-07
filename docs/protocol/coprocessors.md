@@ -10,7 +10,7 @@ Coprocessors are the machines that run FHE for Arcan. They are not Robinhood val
 * Writes the output ciphertext under the handle the host already stored
 * Serves a decrypt only when the access list allows that account
 
-Anyone can recompute a step. Given the same inputs and the same opcode, the output handle is fixed. The coprocessor is there because the arithmetic is too heavy for the host, not because the result is a private opinion.
+Anyone can recompute a step. Given the same inputs and the same opcode, the output handle is fixed. The coprocessor is there because the arithmetic is too heavy for the host. The result is fixed by the operation.
 
 ## What it stores
 

@@ -1,10 +1,10 @@
-# Private token standard
+# Confidential token standard
 
 ERC-7984 is Arcan's confidential fungible token. It is the ERC-20 shape with every amount encrypted. A balance is an `euint64` handle. A transfer moves that handle. From and to stay public. The value on the explorer is `****`.
 
 Robinhood stores the handles and records the call. It does not run the FHE. Coprocessors add and subtract the ciphertext. The access list decides who may open a handle.
 
-A private DEX, AMM, NFT sale, loan, or payroll is this standard with another contract around it. The list is in [What you can build](build.md).
+A confidential DEX, AMM, NFT sale, loan, or payroll is this standard with another contract around it. The list is in [What you can build](build.md).
 
 ## What is public
 
@@ -193,7 +193,7 @@ A native confidential token is this standard with its own supply. It does not wr
 import { FHE, euint64, externalEuint64 } from "@arcan/solidity/lib/FHE.sol";
 import { ArcanConfig } from "@arcan/solidity/config/ArcanConfig.sol";
 
-contract PrivateToken is ArcanConfig, ERC7984, Ownable2Step {
+contract ConfidentialToken is ArcanConfig, ERC7984, Ownable2Step {
     constructor(address owner, string memory name_, string memory symbol_, string memory uri)
         ERC7984(name_, symbol_, uri)
         Ownable(owner)

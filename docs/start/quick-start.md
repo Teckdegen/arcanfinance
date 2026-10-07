@@ -23,7 +23,7 @@ import { FHE, euint32, externalEuint32 } from "@arcan/solidity/lib/FHE.sol";
 import { ArcanConfig } from "@arcan/solidity/config/ArcanConfig.sol";
 
 contract SealedCounter is ArcanConfig {
-    euint32 private count;
+    euint32 internal count;
 
     function increment(externalEuint32 encryptedValue, bytes calldata inputProof) external {
         euint32 value = FHE.fromExternal(encryptedValue, inputProof);

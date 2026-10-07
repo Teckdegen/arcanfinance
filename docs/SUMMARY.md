@@ -46,7 +46,7 @@
 
 * [Overview](apps/overview.md)
 * [What you can build](apps/build.md)
-* [Private token standard](apps/token.md)
+* [Confidential token standard](apps/token.md)
 * [Wrappers](apps/wrappers.md)
 
 ## Examples

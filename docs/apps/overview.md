@@ -2,12 +2,12 @@
 
 Arcan apps are contracts that move value without publishing the amount. The protocol pieces underneath them are the same: handles on Robinhood, FHE on coprocessors, an access list for who may open a result.
 
-The private token standard is that contract: ERC-20 calls, encrypted amounts. [What you can build](build.md) lists the apps that sit on it, from a private token to a private DEX, AMM, or NFT.
+The confidential token standard is that contract: ERC-20 calls, encrypted amounts. [What you can build](build.md) lists the apps that sit on it, from a confidential token to a confidential DEX, AMM, or NFT.
 
 ## Included here
 
 * [What you can build](build.md).
-* [Private token standard](token.md), the ERC-7984 shape.
+* [Confidential token standard](token.md), the ERC-7984 shape.
 * [Wrappers](wrappers.md), contracts that put an existing asset behind a sealed balance.
 
 ## How an app should behave
