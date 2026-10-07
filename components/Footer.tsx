@@ -5,7 +5,7 @@ export function Footer() {
         <a href="/" className="text-[18px] font-semibold tracking-[0.14em] text-black">
           ARCAN
         </a>
-        <a href="#" aria-label="X" className="text-black">
+        <a href="https://x.com/arcanfinance" target="_blank" rel="noopener noreferrer" aria-label="Arcan on X" className="text-black">
           <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
             <path
               fill="currentColor"
