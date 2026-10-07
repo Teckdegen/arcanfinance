@@ -54,6 +54,10 @@
 * [Encrypted counter](examples/counter.md)
 * [Confidential transfer](examples/token.md)
 
+## $ANC
+
+* [$ANC](anc.md)
+
 ## Help
 
 * [Support](help.md)
